@@ -3,6 +3,11 @@
 A modular terminal-based CLI assistant with system tools, file commands, and extensible modules.
 
 ---
+<<<<<<< HEAD
+=======
+![BlackHole-cli](https://github.com/Mr-Lococo/blackhole-cli/blob/main/assets/blackhole.gif)
+---
+>>>>>>> aba55f085592846928560db57b810dc7b00cd065
 
 ## Features
 
@@ -28,4 +33,8 @@ For more information go to docs/DISCLAIMER.md and License.txt
 - Secure  
 - Comes with useful out-of-the-box tools to improve productivity  
 
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> aba55f085592846928560db57b810dc7b00cd065
