@@ -5,7 +5,7 @@ A modular terminal-based CLI assistant with system tools, file commands, and ext
 ---
 <<<<<<< HEAD
 =======
-![BlackHole-cli](https://github.com/Mr-Lococo/blackhole-cli/blob/main/assets/blackhole.gif)
+![BlackHole-cli](https://github.com/Mr-Lococo/blackhole-cli/blob/master/assets/blackhole.gif)
 ---
 >>>>>>> aba55f085592846928560db57b810dc7b00cd065
 
