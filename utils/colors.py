@@ -1,0 +1,10 @@
+class BColor:
+    red = "\033[31m"
+    ENDC = "\033[0m"
+    purple = "\033[95m"
+    cyan = "\033[36m"
+    helping = "\033[94m"
+    vlightblue = "\033[34m"
+    lightgreen = "\033[32m"
+    WARNING = "\033[33m"
+    Error = "\033[91m"

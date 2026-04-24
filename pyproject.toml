@@ -1,0 +1,13 @@
+[project]
+name = "blackhole-cli"
+version = 0.1.0-beta1
+description = "A modular terminal-based CLI assistant with system tools, file commands, and extensible modules."
+authors = [{name = "Lococo"}]
+dependencies = []
+
+[project.scripts]
+blackhole = ".main:main"
+
+[build-system]
+requires = ["setuptools"]
+build-blackend =  "setuptools.build_meta"
