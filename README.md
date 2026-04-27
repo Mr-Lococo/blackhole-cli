@@ -31,7 +31,5 @@ For more information go to docs/DISCLAIMER.md and License.txt
 - Secure  
 - Comes with useful out-of-the-box tools to improve productivity  
 
-<<<<<<< HEAD
 ---
-=======
 ---
