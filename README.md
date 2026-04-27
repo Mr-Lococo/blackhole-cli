@@ -3,7 +3,6 @@
 A modular terminal-based CLI assistant with system tools, file commands, and extensible modules.
 
 ---
-=======
 ![BlackHole-cli](https://github.com/Mr-Lococo/blackhole-cli/blob/master/assets/blackhole.gif)
 ---
 
@@ -31,7 +30,6 @@ For more information go to docs/DISCLAIMER.md and License.txt
 - Secure  
 - Comes with useful out-of-the-box tools to improve productivity  
 
-<<<<<<< HEAD
 ---
-=======
+s
 ---
