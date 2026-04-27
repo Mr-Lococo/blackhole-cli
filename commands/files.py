@@ -1,13 +1,5 @@
 import os
-<<<<<<< HEAD
-import random
-import platform
-import time
 from utils.colors import BColor as colors
-from utils.animations import loading_animation
-=======
-from utils.colors import BColor as colors
->>>>>>> aba55f085592846928560db57b810dc7b00cd065
 from commands.system import request_command_error, unknown_command, too_many_command_requestes
 
 def cmd_cd(parts):
@@ -48,26 +40,6 @@ def cmd_secure(parts):
         ask = input(f"{colors.WARNING}[?] >>> Are you sure you want to securely delete '{target}'? (y/n): {colors.ENDC}") #ask the user for confirmation before deleting the file
         if ask.lower() == "y" or ask.lower() == "yes":
             if os.path.isfile(target):
-<<<<<<< HEAD
-                print(f"{colors.helping}-[*] >>> Getting user's OS information...{colors.ENDC}")
-                User_os = platform.system()
-                if User_os == "Windows":
-                    try:
-                        with open(target, "ba+") as f:
-                            length = f.tell()
-                            print(f"{colors.helping}-[*] >>> Using 'TWO'...{colors.ENDC}")
-                            f.seek(0)
-                            time.sleep(0.5)
-                            f.write(os.urandom(length))
-                            time.sleep(0.5)
-                            f.write(os.urandom(length))
-                            time.sleep(0.5)
-                            f.write(os.urandom(length))
-                        os.remove(target)
-                        print(f"{colors.lightgreen}[+] >>> '{target}' has been securely deleted.{colors.ENDC}")
-                    except Exception as e:
-                        print(f"{colors.Error}[!] >>> An error occurred: {str(e)}{colors.ENDC}")
-=======
                 try:
                     os.remove(target)
                     print(f"{colors.helping}[+] >>> File '{target}' securely deleted.{colors.ENDC}") #if it was successfully deleted, print a success message
@@ -77,7 +49,6 @@ def cmd_secure(parts):
                     print(f"{colors.Error}[!] >>> Permission denied for '{target}'.{colors.ENDC}") #if permission is denied, print an error message
                 except Exception as e:
                     print(f"{colors.Error}[!] >>> An error occurred: {str(e)}{colors.ENDC}") #if any other error occurs, print the error message
->>>>>>> aba55f085592846928560db57b810dc7b00cd065
             else:
                 print(f"{colors.Error}[!] >>> '{target}' is not a file.{colors.ENDC}") #if the target is not a file, print an error message
         elif ask.lower() == "n" or ask.lower() == "no":
