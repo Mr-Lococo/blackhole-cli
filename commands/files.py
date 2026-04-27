@@ -21,38 +21,6 @@ def cmd_cd(parts):
         except Exception as e:
             print(f"{colors.Error}[!] >>> An error occurred: {str(e)}{colors.ENDC}")
             return
-    
-def cmd_secure(parts):
-    if len(parts) < 2:
-        request_command_error()
-        return
-    elif len(parts) > 3:
-        too_many_command_requestes()
-        return
-        
-    arg = parts[1]
-
-    if arg in ("--remove", "-rm"):
-        if len(parts) < 3:
-            request_command_error()
-            return
-        target = parts[2]
-        ask = input(f"{colors.WARNING}[?] >>> Are you sure you want to securely delete '{target}'? (y/n): {colors.ENDC}") #ask the user for confirmation before deleting the file
-        if ask.lower() == "y" or ask.lower() == "yes":
-            if os.path.isfile(target):
-                try:
-                    os.remove(target)
-                    print(f"{colors.helping}[+] >>> File '{target}' securely deleted.{colors.ENDC}") #if it was successfully deleted, print a success message
-                except FileNotFoundError:
-                    print(f"{colors.Error}[!] >>> File '{target}' not found.{colors.ENDC}") #if the file was not found, print an error message
-                except PermissionError:
-                    print(f"{colors.Error}[!] >>> Permission denied for '{target}'.{colors.ENDC}") #if permission is denied, print an error message
-                except Exception as e:
-                    print(f"{colors.Error}[!] >>> An error occurred: {str(e)}{colors.ENDC}") #if any other error occurs, print the error message
-            else:
-                print(f"{colors.Error}[!] >>> '{target}' is not a file.{colors.ENDC}") #if the target is not a file, print an error message
-        elif ask.lower() == "n" or ask.lower() == "no":
-            print(f"{colors.helping}[+] >>> Operation cancelled.{colors.ENDC}") #if the user cancels the operation, print a cancellation message
                     
 def cmd_ls(parts):
     if len(parts) > 2:

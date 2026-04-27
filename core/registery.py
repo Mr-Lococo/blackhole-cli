@@ -1,6 +1,6 @@
 from core_commands.help import cmd_void
 from commands.system import cmd_clear, cmd_whoami
-from commands.files import cmd_cd, cmd_secure, cmd_ls
+from commands.files import cmd_cd, cmd_ls
 # ----- list -----------
 
 commands = {
@@ -8,6 +8,5 @@ commands = {
     "void": cmd_void,
     "whoami": cmd_whoami,
     "cd": cmd_cd,
-    "secure": cmd_secure,
     "ls": cmd_ls
 }
