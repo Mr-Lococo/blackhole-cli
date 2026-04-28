@@ -1,34 +1,55 @@
-# BlackHole CLI
-
-A modular terminal-based CLI assistant with system tools, file commands, and extensible modules.
+# BlackHole-cli
+A privacy-focused terminal with build-in security controls and pentesting tools.
 
 ---
-![BlackHole-cli](https://github.com/Mr-Lococo/blackhole-cli/blob/master/assets/blackhole.gif)
+
+## What is it?
+**blackhole-cli** is a custom terminal designed for:
+ * Privacy (no background logging)
+ * Custom security rules with TWO
+ * Build-in tools
+
 ---
+
+## What is TWO?
+TWO {Three-Way Overright} is a rule-based protection system.
+
+It allows you to:
+ * Control of how commands interact with your system.
+ * Restrict access to files, network or system resources.
+ * Apply protection to just terminal or your entire PC.
 
 ## Features
-
-- Custom command system  
-- Built-in system tools
-- Secure menu with TWO (Three-Way-Overright)
-- Scan / network utilities  
-- Colorful command-line interface  
-- AI assistant (WIP)  
+ * Privacy-focused design (no automatic logging)
+ * Rule-based protection system (TWO)
+ * Build-in tools for scanning and testing
 
 ---
 
-## Disclaimer and License
-
-For more information go to docs/DISCLAIMER.md and License.txt
+## Demo
 
 ---
 
-## Why BlackHole CLI?
-
-- A lightweight alternative CLI with assistant-like command handling  
-- Easy to use and understand
-- Secure  
-- Comes with useful out-of-the-box tools to improve productivity  
+## Status
+The project is still in development
+Features may change and not yet fully stable
 
 ---
+
+## Why use blackhole-cli?
+
+ * More control over terminal security
+ * Build-in tools instead of installing many packages
+ * lightweight and focused
+
 ---
+
+## installation
+
+Git: ["git clone https://github.com/Mr-Lococo/blackhole-cli"]
+
+---
+
+## Contributing
+Contributing, ideas and feedback are welcome.
+
