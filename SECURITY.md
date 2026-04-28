@@ -13,4 +13,6 @@ Here you can see the versions that will still be supported with security and TWO
 
 ## Reporting a Vulnerability
 
-comming soon...
+Please report security vulnerabilities using GitHub's private vulnerability reporting feature.
+
+Do not open public issues for security problems.
