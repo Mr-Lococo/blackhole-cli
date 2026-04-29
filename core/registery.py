@@ -1,4 +1,4 @@
-from core_commands.help import cmd_void
+from core_commands.void import cmd_void
 from commands.system import cmd_clear, cmd_whoami
 from commands.files import cmd_cd, cmd_ls
 # ----- list -----------
