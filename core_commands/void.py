@@ -1,4 +1,5 @@
 import time
+import socket
 import os
 from utils.ui import  show_command_list, choose_help_command
 from utils.colors import BColor as colors
@@ -21,6 +22,6 @@ def cmd_void(parts):
         elif len(parts) > 3:
             too_many_command_requestes()
     elif arg in ("--version", "-v"):
-        print(f"{colors.helping}BlackHole CLI v{colors.ENDC}{version}")
+        print(f"[+] >>> {colors.helping}BlackHole CLI v{colors.ENDC}{version}")
     else:
         print(f"{colors.Error}[!] >>> Unknown option '{arg}'.{colors.ENDC}")

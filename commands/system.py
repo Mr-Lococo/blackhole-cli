@@ -19,7 +19,7 @@ def cmd_clear(parts):
         title()
         print("Welcome Boss!")
 
-def cmd_whoami(parts):
+def cmd_whoami(parts): #we need to make a linux version
     if len(parts) > 2:
         too_many_command_requestes()
     elif len(parts) == 1:

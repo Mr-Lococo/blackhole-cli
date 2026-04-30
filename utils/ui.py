@@ -1,53 +1,56 @@
 from utils.colors import BColor as colors 
     
-def show_help_Void():
-    print(f"""BlackHole CLI v0.1.0-beta1          
-{colors.helping}Usage:
-    void [options]{colors.ENDC}
+BANNER = "BlackHole CLI v0.1.0-beta1"
 
-options:
-    --help [command] // -h [command]    Show the command's prefix and usage
-    --help // -h                        Show the comand list
-    --version // -v                     Show the version of the tool""")
+def print_header(command: str):
+    print(f"""{BANNER}
+
+{colors.helping}Usage:{colors.ENDC}
+  {command}
+""")
+
+def show_help_void():
+    print_header("void [options]")
+    print("""Options:
+  --help [command], -h [command]   Show command usage
+  --help, -h                      Show command list
+  --version, -v                   Show tool version
+""")
 
 def show_help_ls():
-    print(f"""BlackHole CLI v0.1.0-beta1
-{colors.helping}Usage:
-    ls [options]{colors.ENDC}
-
-options:
-    --diractory // -d                  Show only the directories
-    --files // -f                      Show only the files""")
+    print_header("ls [options]")
+    print("""Options:
+  --directory, -d   Show only directories
+  --files, -f       Show only files
+""")
 
 def show_help_whoami():
-    print(f"""BlackHole CLI v0.1.0-beta1
-          
-{colors.helping}Usage:
-    whoami [options]{colors.ENDC}
-
-options:
-    --hostname // -hn                   Show only the hostname""")
+    print_header("whoami [options]")
+    print("""Options:
+  --hostname, -hn   Show only the hostname
+""")
 
 def show_help_secure():
-    print(f"""BlackHole CLI v0.1.0-beta1
-          
-{colors.helping}Usage:
-    secure [options]{colors.ENDC}
-
-options:
-    --remove // -rm [target]             Securely delete a file""")
+    print_header("secure [options]")
+    print("""Options:
+  --remove, -rm <target>   Securely delete a file
+""")
 
 def show_command_list():
     print("""Available commands:
-          cd          Change the current directory
-          clear       Clear the terminal screen
-          ls          List the contents of the current directory
-          secure      file secure menu
-          whoami      Display the current username and hostname""")
+
+  void     CLI main menu
+  cd       Change the current directory
+  clear    Clear the terminal screen
+  ls       List directory contents
+  secure   File security tools
+  net      Network tools
+  whoami   Show username and hostname
+""")
     
 def choose_help_command(command):
     if command == "void":
-        show_help_Void()
+        show_help_void()
     elif command == "whoami":
         show_help_whoami()
     elif command == "ls":

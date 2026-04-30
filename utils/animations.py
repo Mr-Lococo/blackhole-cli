@@ -18,7 +18,7 @@ def loading_animation(text2, text):
         sys.stdout.flush()
         time.sleep(0.01)
     print(f"\n[{colors.lightgreen} OK {colors.ENDC}] {text2} {text} ... Done" )  # Move to the next line after the animation is complete
-#-----------------------------------------
+#----------------------------------------
 
 # Main function
 loading_animation("starting", "BlackHole")
