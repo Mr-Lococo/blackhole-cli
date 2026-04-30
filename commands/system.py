@@ -25,7 +25,7 @@ def cmd_whoami(parts): #we need to make a linux version
     elif len(parts) == 1:
         username = os.getenv("USERNAME")
         hostname = os.getenv("COMPUTERNAME")
-        print(f"[{colors.lightgreen}+{colors.ENDC}]{colors.helping} >>> your: {username}@{hostname}{colors.ENDC}")
+        print(f"[+]{colors.helping} >>> your: {username}@{hostname}{colors.ENDC}")
         return
     arg = parts[1]
 

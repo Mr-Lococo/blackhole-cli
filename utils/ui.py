@@ -44,7 +44,6 @@ def show_command_list():
   clear    Clear the terminal screen
   ls       List directory contents
   secure   File security tools
-  net      Network tools
   whoami   Show username and hostname
 """)
     
