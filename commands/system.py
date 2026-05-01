@@ -25,7 +25,7 @@ def cmd_whoami(parts): #we need to make a linux version
     elif len(parts) == 1:
         username = os.getenv("USERNAME")
         hostname = os.getenv("COMPUTERNAME")
-        print(f"[+]{colors.helping} >>> your: {username}@{hostname}{colors.ENDC}")
+        print(f"[+]{colors.helping} >>> your: {username}@{colors.ENDC}{hostname}")
         return
     arg = parts[1]
 
@@ -34,3 +34,9 @@ def cmd_whoami(parts): #we need to make a linux version
         print(f"[{colors.lightgreen}+{colors.ENDC}]{colors.helping} >>> your: {hostname}{colors.ENDC}")
     else: 
         print(f"{colors.Error}[!] >>> Unknown option '{arg}'.{colors.ENDC}")
+
+def cmd_Exit(parts): #making a exit command.
+    if len(parts) > 1:
+        too_many_command_requestes()
+    else:
+        exit()

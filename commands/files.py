@@ -60,3 +60,9 @@ def cmd_ls(parts):
                 print(f"{colors.Error}[!] >>> Permission denied for the current directory.{colors.ENDC}")
         else:
             print(f"{colors.Error}[!] >>> Unknown option '{parts[1]}'.{colors.ENDC}")
+
+def cmd_pwd(parts):
+    if len(parts) > 1:
+        too_many_command_requestes()
+    elif len(parts) == 1:
+        print(f"{colors.helping}[+] >>> directory: {os.getcwd()}{colors.ENDC}")

@@ -41,10 +41,11 @@ def show_command_list():
 
   void     CLI main menu
   cd       Change the current directory
+  pwd      Show the current directory
   clear    Clear the terminal screen
   ls       List directory contents
-  secure   File security tools
   whoami   Show username and hostname
+  exit     exits the terminal
 """)
     
 def choose_help_command(command):
